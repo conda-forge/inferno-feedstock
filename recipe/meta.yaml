@@ -19,6 +19,7 @@ requirements:
         - python >=3.6
         - pip
         - pytest-runner
+        - networkx
 
     run:
         - python >=3.6
@@ -34,7 +35,7 @@ requirements:
 
 test:
     imports:
-        - os
+        - inferno
 
 about:
     license: Apache 2.0
