@@ -32,9 +32,9 @@ requirements:
         - pytorch >=0.3,<1.2
         - torchvision >=0.2,<0.3
 
-# test:
-#     imports:
-#         - inferno
+test:
+    imports:
+        - os
 
 about:
     license: Apache 2.0
