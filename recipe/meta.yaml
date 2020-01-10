@@ -31,6 +31,10 @@ requirements:
         - tensorboardx >=1.4
         - pytorch >=0.4,<2.0
         - torchvision >=0.2,<1.0
+        # there's a problem with pillow > 7 in the latest torchvision release.
+        # this can probably be removed with the next torchvision release
+        - pillow <7.0
+
 
 test:
     imports:
