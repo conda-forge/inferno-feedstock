@@ -1,5 +1,5 @@
-{% set version = "v0.4.0" %}
-{% set checksum = "550a183cf84b6f0ad1a883e25d4852a713c5fe5403fb9b4fee54246084424a9c" %}
+{% set version = "v0.4.1" %}
+{% set checksum = "60e6fe70809cb3827386d07f91b0796ea0fdda9954367553b3fe2c4a03c84292" %}
 
 package:
     name: inferno
@@ -29,15 +29,15 @@ requirements:
         - dill
         - networkx
         - tensorboardx >=1.4
-        - pytorch >=0.3,<1.2
-        - torchvision >=0.2,<0.3
+        - pytorch >=0.4,<2.0
+        - torchvision >=0.2,<1.0
+        # there's a problem with pillow > 7 in torchvision
+        - pillow <7.0
 
-# FIXME we use a dummy test here because the pytorch import fails
-# because it tries to use a version build against cuda, which cannot be loaded in travis
+
 test:
     imports:
-        # - inferno
-        - os
+        - inferno
 
 about:
     license: Apache 2.0
