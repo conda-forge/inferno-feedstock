@@ -1,4 +1,4 @@
-{% set version = "v0.4.2" %}
+{% set version = "0.4.2" %}
 {% set checksum = "49a3bc819e6bfce4f2f8b070daa7ca5f573e4270b63bc45e6a3caea9c75d56ff" %}
 
 package:
@@ -6,7 +6,7 @@ package:
     version: {{ version }}
 
 source:
-    url: https://github.com/inferno-pytorch/inferno/archive/{{ version }}.tar.gz
+    url: https://github.com/inferno-pytorch/inferno/archive/v{{ version }}.tar.gz
     sha256: {{ checksum }}
 
 build:
