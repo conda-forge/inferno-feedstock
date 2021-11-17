@@ -38,7 +38,7 @@ test:
         - inferno
 
 about:
-    license: Apache 2.0
+    license: Apache-2.0
     license_file: LICENSE
     license_family: APACHE
     summary: A utility library around PyTorch
